@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
   <display-name>Paf_EgOnlinesystem</display-name>
-  <servlet>
-<servlet-name>Jersey Web Application</servlet-name>
-<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
-<load-on-startup>1</load-on-startup>
-</servlet>
+  
 <servlet-mapping>
 <servlet-name>Jersey Web Application</servlet-name>
 <url-pattern>/EGService/*</url-pattern>
@@ -18,4 +14,58 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
+  
+<servlet>
+<servlet-name>Jersey Web Application</servlet-name>
+<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+<load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+ <servlet-name>Jersey Web Application</servlet-name>
+ <url-pattern>/CustomerService/*</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+ <servlet-name>Jersey Web Application Payment</servlet-name>
+ <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+ <load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+ <servlet-name>Jersey Web Application Payment</servlet-name>
+ <url-pattern>/PaymentService/*</url-pattern>
+</servlet-mapping>
+
+
+ <servlet>
+ <servlet-name>Jersey Web Application approve</servlet-name>
+ <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+ <load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+ <servlet-name>Jersey Web Application approve</servlet-name>
+ <url-pattern>/ApprovementService/*</url-pattern>
+</servlet-mapping>
+
+
+ <servlet>
+ <servlet-name>Jersey Web Application bill</servlet-name>
+ <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+ <load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+ <servlet-name>Jersey Web Application bill</servlet-name>
+ <url-pattern>/BillService/*</url-pattern>
+</servlet-mapping>
+
+ <servlet>
+ <servlet-name>Jersey Web Application FA</servlet-name>
+ <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+ <load-on-startup>1</load-on-startup>
+</servlet>
+<servlet-mapping>
+ <servlet-name>Jersey Web Application FA</servlet-name>
+ <url-pattern>/FAService/*</url-pattern>
+</servlet-mapping>
+
 </web-app>
